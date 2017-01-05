@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>1481543633_icons_user.png</file>
+        <file>1481543648_icons_reload.png</file>
+        <file>1481543660_icons_exit.png</file>
+        <file>pic/ico_close.png</file>
+    </qresource>
+</RCC>

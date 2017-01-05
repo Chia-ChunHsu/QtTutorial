@@ -1,0 +1,11 @@
+*.Debug
+*.Release
+*.exp
+Makefile
+L07WindowsForm/debug/
+TestPlugin/debug/
+L01Button_Label/debug/
+L08QThread/debug/
+Plugin/debug/
+L04Menu/debug/
+L05EditLabel/debug/
