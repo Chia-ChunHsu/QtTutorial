@@ -15,7 +15,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->label->setText("Button give me a signal!");
+    ui->label->setText("Button Clicked");
 }
 
 void MainWindow::on_pushButton_2_clicked()

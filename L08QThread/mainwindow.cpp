@@ -26,3 +26,11 @@ void MainWindow::on_startButton_2_clicked()
     myThread2->start();
     connect(myThread2,SIGNAL(send_progress(int)),ui->progressBar2,SLOT(setValue(int)));
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+   Thread *thread = new Thread;
+   //thread->Initial(50);
+   //connect(thread,SIGNAL(send_progress(int)),ui->Bar,SLOT(setValue(int)));
+   //thread->start();
+}

@@ -30,10 +30,12 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QGridLayout *gridLayout;
-    QProgressBar *progressBar1;
     QPushButton *startButton_1;
+    QProgressBar *progressBar1;
     QProgressBar *progressBar2;
     QPushButton *startButton_2;
+    QPushButton *pushButton;
+    QProgressBar *Bar;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -49,27 +51,38 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        startButton_1 = new QPushButton(centralWidget);
+        startButton_1->setObjectName(QStringLiteral("startButton_1"));
+
+        gridLayout->addWidget(startButton_1, 1, 2, 1, 1);
+
         progressBar1 = new QProgressBar(centralWidget);
         progressBar1->setObjectName(QStringLiteral("progressBar1"));
         progressBar1->setValue(0);
 
-        gridLayout->addWidget(progressBar1, 0, 0, 1, 1);
-
-        startButton_1 = new QPushButton(centralWidget);
-        startButton_1->setObjectName(QStringLiteral("startButton_1"));
-
-        gridLayout->addWidget(startButton_1, 0, 1, 1, 1);
+        gridLayout->addWidget(progressBar1, 1, 0, 1, 1);
 
         progressBar2 = new QProgressBar(centralWidget);
         progressBar2->setObjectName(QStringLiteral("progressBar2"));
         progressBar2->setValue(0);
 
-        gridLayout->addWidget(progressBar2, 1, 0, 1, 1);
+        gridLayout->addWidget(progressBar2, 2, 0, 1, 1);
 
         startButton_2 = new QPushButton(centralWidget);
         startButton_2->setObjectName(QStringLiteral("startButton_2"));
 
-        gridLayout->addWidget(startButton_2, 1, 1, 1, 1);
+        gridLayout->addWidget(startButton_2, 2, 2, 1, 1);
+
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        gridLayout->addWidget(pushButton, 0, 2, 1, 1);
+
+        Bar = new QProgressBar(centralWidget);
+        Bar->setObjectName(QStringLiteral("Bar"));
+        Bar->setValue(0);
+
+        gridLayout->addWidget(Bar, 0, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -93,6 +106,7 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         startButton_1->setText(QApplication::translate("MainWindow", "Start 1", 0));
         startButton_2->setText(QApplication::translate("MainWindow", "Start 2", 0));
+        pushButton->setText(QApplication::translate("MainWindow", "PushButton", 0));
     } // retranslateUi
 
 };

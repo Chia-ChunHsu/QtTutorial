@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-01-06T00:00:10
+# Project created by QtCreator 2017-03-07T10:13:48
 #
 #-------------------------------------------------
 
@@ -8,17 +8,13 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = L08QThread
+TARGET = L10_Stacked_Widget
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    thread.cpp \
-    mythread.cpp
+        mainwindow.cpp
 
-HEADERS  += mainwindow.h \
-    thread.h \
-    mythread.h
+HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui

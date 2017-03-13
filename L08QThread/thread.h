@@ -10,6 +10,7 @@ public:
 
 protected:
     void run();
+
 signals:
     void send_progress(int);
 

@@ -11,6 +11,10 @@ class myPlugin :public QObject, myPluginInterface
 public:
     myPlugin();
     void Print() Q_DECL_OVERRIDE;
+private:
+    int a;
+    int b;
+    int c;
 };
 
 #endif // MYPLUGIN_H

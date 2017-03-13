@@ -5,6 +5,7 @@
 #include <QtPlugin>
 #include <QDir>
 #include <QPluginLoader>
+
 #include "plugininterface.h"
 namespace Ui {
 class MainWindow;
